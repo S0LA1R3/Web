@@ -15,3 +15,13 @@ for (var i = 0; i < 10; i++) {
 
 funcs[2]()
 funcs[8]()
+
+const func = []
+for (let c = 0; c < 10; c++) {
+    func.push(function() {
+        console.log(c)
+    })
+}
+
+func[2]()
+func[8]()
