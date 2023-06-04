@@ -5,8 +5,9 @@ valores[999] = 1
 console.log(valores)
 console.log(valores.length)
 
-valores.push({dictionary: 'python like'}, false, null) // append
+valores.push({'dictionary(object)': 'python like'}, false, null) // append
 console.log(valores)
+console.log(typeof valores[1000])
 
 console.log(valores.pop()) // pull the last element
 delete valores[0]
