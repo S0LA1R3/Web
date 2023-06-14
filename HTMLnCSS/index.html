@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Exercises</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Exercises</h1>
+    </header>
+    <nav>
+        <a href="exercises/test.html">00 - Test</a><br/>
+        <a href="exercises/temp.html">01 - Test</a>
+    </nav>
+    <section id="content"></section>
+    <footer>
+        <br/>
+        Modern Web Course
+    </footer>
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.onclick = function(e) {
+                e.preventDefault()
+                const content = document.getElementById('content')
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => content.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+</html>
