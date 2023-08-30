@@ -19,6 +19,9 @@ for(let i in notas){
 
 console.log(notasBaixas)
 
-//Com CallBack
+// Com CallBack
 notasBaixas = notas.filter((nota) => nota < 7)
 console.log(notasBaixas)
+
+// Exemplo no browser
+// document.getElementsByTagName('body')[0].onclick = (e) => console.log('Gotcha!')
