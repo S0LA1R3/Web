@@ -6,15 +6,13 @@ let atual = ''
 for(let i in pontuacoes){
     atual += pontuacoes[i]
     if(pontuacoes[i] == ' ' || i == pontuacoes.length - 1){
-        if(Number(atual) > vetor.at(-1) || vetor.length == 0){
+        if((Number(atual) > vetor.at(-1) || vetor.length == 0) && menor != 999){
             vetor.push(atual)
         }
+        if(Number(atual.substring(0, atual.length - 1)) < menor)
+            menor = atual
         atual = ''
     }
-
-    if(pontuacoes[i] < menor)
-        menor = pontuacoes[i]
-    
 }
 
 for(let i in vetor){
