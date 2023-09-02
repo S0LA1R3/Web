@@ -1,0 +1,15 @@
+console.log(typeof Array, typeof new Array, typeof [])
+
+let aprovados = new Array('a', 'b', 'c')
+console.log(aprovados)
+
+aprovados.splice(1, 1, 'd', 'e')
+console.log(aprovados)
+aprovados.splice(1, 2)
+console.log(aprovados)
+aprovados.splice(1, 0, 'g', 'h')
+console.log(aprovados)
+aprovados.splice(9, 0, 'i', 'j')
+console.log(aprovados)
+aprovados.splice(15, 2, 'k', 'l')
+console.log(aprovados)
