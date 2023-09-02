@@ -17,3 +17,23 @@ String.prototype.toString = function(){
 }
 
 console.log('amogus'.reverse())
+
+function amogus(color = 'red', impostor = true){
+    this.color = color,
+    this.impostor = impostor
+}
+
+const red = new amogus
+const purple = new amogus('purple', false)
+console.log(red, purple)
+
+function novo(f, ...params){
+    const obj = {}
+    obj.__proto__ = f.prototype
+    f.apply(obj, params)
+    return obj
+}
+
+const green = novo(amogus, 'green', false)
+const cyan = novo(amogus, 'cyan', 'sus')
+console.log(green, cyan)
