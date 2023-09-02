@@ -22,3 +22,7 @@ const mo = {mo: 'mo'}
 const gus = {gus: 'gus', a: 'a'}
 const amogus2 = Object.assign(a, mo, gus)
 console.log(amogus2)
+
+Object.freeze(amogus2)
+amogus2.c = 'notAmogus'
+console.log(amogus2)
