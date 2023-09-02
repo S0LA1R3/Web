@@ -14,3 +14,7 @@ delete valores[0]
 console.log(valores)
 
 console.log(typeof valores)
+
+const array = [1, 7, 2, 5, 0]
+array.sort()
+console.log(array)
