@@ -41,3 +41,21 @@ lamborghini.accelerate(200)
 console.log(lamborghini.displaySpeed())
 porsche.accelerate(100)
 console.log(porsche.displaySpeed())
+
+const person = {eyeColor: 'brown', hairColor: 'black'}
+
+const abdel = Object.create(person)
+abdel.hairColor = 'blonde'
+console.log(abdel.hairColor)
+
+const adrian = Object.create(person, {
+    hairColor: {value: 'red', enumerable: true, writable: false},
+    age: {value: 20, enumerable: true, writable: true}
+})
+
+console.log(adrian)
+
+for(let key in adrian){
+    adrian.hasOwnProperty(key) ?
+    console.log(key) : console.log(`Por herança: ${key}`)
+}
