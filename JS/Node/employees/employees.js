@@ -3,7 +3,7 @@ const axios = require('axios')
 
 axios.get(url).then(response => {
     let chinaWomen = Object.entries(response.data).filter(employee => {
-        if(employee[1].pais == 'China' && employee[1].genero == 'M'){
+        if(employee[1].pais == 'China' && employee[1].genero == 'F'){
             return true
         }
     })
