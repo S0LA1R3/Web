@@ -1,5 +1,5 @@
-const Require = require('./require.js')
-const anotherRequire = require('./anotherRequire.js')
+const Require = require('./require')
+const anotherRequire = require('./anotherRequire')
 
 console.log(Require)
 console.log(anotherRequire)
