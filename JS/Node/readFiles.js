@@ -16,3 +16,12 @@ fs.readdir(__dirname, (err, files) => {
     console.log('Path Content')
     console.log(files)
 })
+
+const product = {
+    name: "Amogus Doll",
+    price: 2077,
+}
+
+fs.writeFile(__dirname + '/generatedFile.json', JSON.stringify(product), err => {
+    console.log(err || 'File Saved!')
+})
