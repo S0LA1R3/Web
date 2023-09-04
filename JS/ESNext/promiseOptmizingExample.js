@@ -68,3 +68,5 @@ Promise.all([getClass2('A'), getClass2('B'), getClass2('C')])
     .then(classes => [].concat(...classes))
     .then(students => students.map(student => student.nome))
     .then(names => console.log(names))
+
+getClass2('D').catch(e => console.log(e.message))
