@@ -22,8 +22,9 @@ function error(value, err){
     })
 }
 
-error('Test', 0.5).then(v => console.log(`Valor ${v}`))
+error('Test', 0.5)
     .then(v => `Value: ${v}`)
+    .then(console.log)
     .then(
         v => consol.log(v),
         err => console.log(`Erro: ${err}`)
@@ -31,3 +32,16 @@ error('Test', 0.5).then(v => console.log(`Valor ${v}`))
     .then(console.log('Quase fim'))
     .catch(err => console.log(`Erro Geral: ${err}`))
     .then(console.log('Fim!'))
+
+async function exec(){
+    await talkAfter(1)
+    console.log('1')
+
+    await talkAfter(1)
+    console.log('2')
+
+    await talkAfter(1)
+    console.log('3')
+}
+
+exec()
