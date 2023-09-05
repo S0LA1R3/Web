@@ -1,0 +1,45 @@
+<h1>Form</h1>
+
+<form action="http://localhost:3090/usuarios" method="post">
+    <input type="text" name="name">
+    <input type="password" name="password">
+    <textarea name="bio" cols="30" rows="10">Fala um pouco sobre você...</textarea>
+    <div>
+        <input type="radio" name="type" value="adm"> ADM
+        <input type="radio" name="type" value="regular"> Regular
+        <input type="radio" name="type" value="professor"> Professor
+    </div>
+    <div>
+        <input type="checkbox" name="active"> Active
+    </div>
+
+    <select name="state">
+        <option value="">Selecione</option>
+        <option value="pe">Pernambuco</option>
+        <option value="sp">São Paulo</option>
+        <option value="sc">Santa Catarina</option>
+    </select>
+
+    <select name="interests" multiple size="5">
+        <option value="js">JavaScript</option>
+        <option value="py">Python</option>
+        <option value="jv">Java</option>
+        <option value="cpp">C++</option>
+        <option value="c">C</option>
+        <option value="dart">Dart</option>
+    </select>
+
+    <button>Incluir</button>
+</form>
+ 
+<style>
+    input,textarea, select {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type=radio],
+    input[type=checkbox]{
+        display: inline;
+    }
+</style>
