@@ -1,6 +1,6 @@
 <h1>Form</h1>
 
-<form action="http://localhost:3090/usuarios" method="post">
+<form method="post">
     <input type="text" name="name">
     <input type="password" name="password">
     <textarea name="bio" cols="30" rows="10">Fala um pouco sobre você...</textarea>
@@ -29,9 +29,10 @@
         <option value="dart">Dart</option>
     </select>
 
-    <button>Incluir</button>
+    <button formaction="http://localhost:3090/usuarios">Incluir</button>
+    <button formaction="http://localhost:3090/usuarios/change">Alterar</button>
 </form>
- 
+
 <style>
     input,textarea, select {
         display: block;
