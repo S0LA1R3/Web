@@ -74,3 +74,20 @@ header {
     animation: grow 0.2s forwards;
     transition: width 0.3s;
 }
+
+#content {
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    color: rgb(32, 32, 0);
+    font-size: 21px;
+}
+
+#name {
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(226, 226, 0);
+    font-size: 48px;
+    text-shadow: 4px 4px 8px rgba(83, 83, 47, 0.8);
+}
