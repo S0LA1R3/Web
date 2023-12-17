@@ -87,7 +87,7 @@ main {
     color: rgb(226, 226, 0);
     font-size: 48px;
     text-shadow: 4px 4px 8px rgba(83, 83, 47, 0.8);
-    margin-bottom: 69px;
+    margin-bottom: 51px;
 }
 
 main p {
@@ -109,4 +109,23 @@ footer {
     height: 150px;
     align-items: center;
     justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#lists {
+    display: flex;
+    flex-direction: column;
+}
+
+#ifpe {
+    border: 12px solid brown;
+    border-radius: 10%;
+    margin-left: 69px;
+    margin-bottom: 24px;
+    width: 450px;
 }
