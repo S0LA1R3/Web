@@ -129,3 +129,9 @@ footer {
     margin-bottom: 24px;
     width: 450px;
 }
+
+figcaption {
+    text-align: center;
+    margin-left: 69px;
+    margin-top: -24px;
+}
