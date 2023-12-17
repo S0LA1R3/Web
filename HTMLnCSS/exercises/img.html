@@ -40,33 +40,30 @@
 </div>
 
 <script>
-    async function asyncWhile(condition, callback, delay) {
-        while (condition()) {
-            await new Promise(resolve => setTimeout(resolve, delay))
-            await callback()
+    async function intervalLoop(img) {
+        img.style.display = 'flex'
+        img.style.left = -514 + 'px'
+
+        for(let x = -514; x <= window.innerWidth; x += 5) {
+            img.style.left = x + 'px'
+
+            await new Promise(resolve => setTimeout(resolve, 1))
+        }
+
+        img.style.display = 'none'
+    }
+
+    async function startLoop() {
+        const imgs = document.querySelectorAll('p')
+        
+        while(true) {
+            for(const img of imgs) {
+                await intervalLoop(img)
+            }
         }
     }
 
-    async function executarAnimacao(paragrafo) {
-        let leftValue = 0;
-        paragrafo.style.left = leftValue + 'px'
-        paragrafo.style.display = 'inline'
-
-        await asyncWhile(
-            () => leftValue < window.innerWidth,
-            async () => {
-                leftValue++
-                paragrafo.style.left = leftValue + 'px'
-            },
-            1
-        )
-
-    paragrafo.style.display = 'none';
-}
-
-    document.querySelectorAll('p').forEach(img => {
-        executarAnimacao(img)
-    })
+    startLoop()
 </script>
 
 <style>

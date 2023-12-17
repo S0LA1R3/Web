@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column; /* Alteração para column */
+    margin: 0;
+    background-color: yellowgreen;
+}
+
+header {
+    display: flex;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: green;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+}
+
+
+#logo {
+    width: 180px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-right: 200px;
+}
+
+.link-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 24px;
+    position: relative;
+}
+
+.link-button:hover {
+    color: lightblue;
+    animation: grow 0.2s forwards;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+        color: black;
+    }
+    100% {
+        transform: scale(1.3);
+        color: lightblue;
+    }
+}
+
+.link-button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: lightblue;
+    bottom: 0;
+    left: 15%;
+}
+
+.link-button:hover::after {
+    width: 72%;
+    animation: grow 0.2s forwards;
+    transition: width 0.3s;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#presentation-conteiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    font-size: 48px;
+    color: yellow;
+    font-weight: bold;
+}
+
+#hi {
+    margin-bottom: -15px;
+}
+
+#name {
+    margin-bottom: 69px;
+    font-size: 36px;
+}
+
+#welcome {
+    font-size: 42px;
+}
+#self-image {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    margin: 45px 72px 0px 0px;
+}
