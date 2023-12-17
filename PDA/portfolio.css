@@ -20,6 +20,7 @@ header {
     width: 180px;
     margin-left: 20px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 #links {
@@ -98,9 +99,111 @@ header {
 #welcome {
     font-size: 42px;
 }
+
 #self-image {
     border-radius: 50%;
     width: 450px;
     height: 450px;
     margin: 45px 72px 0px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #self-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    #presentation-conteiner {
+        font-size: 39px;
+    }
+    
+    #name {
+        margin-bottom: 69px;
+        font-size: 30px;
+    }
+    
+    #welcome {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #logo {
+        width: 100px;
+    }
+
+    #self-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    #presentation-conteiner {
+        font-size: 24px;
+    }
+    
+    #name {
+        margin-bottom: 69px;
+        font-size: 18px;
+    }
+    
+    #welcome {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        display: none;
+    }
+
+    #links {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        margin-right: 0;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    #presentation-conteiner {
+        align-items: center;
+        margin: 0;
+        font-size: 69px;
+    }
+    
+    #hi {
+        margin-bottom: 51px;
+    }
+    
+    #name {
+        margin-bottom: 69px;
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+    
+    #welcome {
+        font-size: 27px;
+    }
+
+    #self-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        display: flex;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        background-color: green;
+        width: 101%;
+        height: 100px;
+        align-items: center;
+    }
+
+    .link-button {
+        font-size: 18px;
+    }
 }
