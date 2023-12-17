@@ -207,6 +207,10 @@ header {
         align-items: center;
     }
 
+    #welcome {
+        font-size: 24px;
+    }
+
     .link-button {
         font-size: 18px;
     }
