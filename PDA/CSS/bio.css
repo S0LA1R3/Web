@@ -17,7 +17,7 @@ header {
 
 
 #logo {
-    width: 180px;
+    width: 100px;
     margin-left: 20px;
     margin-bottom: 15px;
     cursor: pointer;
@@ -90,4 +90,8 @@ header {
     color: rgb(226, 226, 0);
     font-size: 48px;
     text-shadow: 4px 4px 8px rgba(83, 83, 47, 0.8);
+}
+
+p {
+    text-indent: 30px;
 }
