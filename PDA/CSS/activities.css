@@ -87,6 +87,7 @@ header {
     color: rgb(32, 32, 0);
     text-align: center;
     font-size: 32px;
+    font-weight: bold;
 }
 
 #project {
@@ -100,28 +101,73 @@ header {
     opacity: 0.6;
 }
 
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div > section {
+    font-size: 30px;
+    color: yellow;
+    text-align: justify;
+    background-color: purple;
+    border: 2px solid brown;
+    border-radius: 5%;
+    
+}
+
+main > div > section > p {
+    margin: 24px;
+}
+
+#sincrono > section {
+    height: 333px;
+}
+
+#arremate > section {
+    height: 290px;
+}
+
+#final > section {
+    height: 390px;
+}
+
 main img {
     margin: auto;
-    display: block;
-    margin-bottom: 150px;
 }
 
 #jojo {
     border: 3px solid brown;
     border-radius: 5%;
-    width: 51%;
-    height: 360px;
+    height: 400px;
+    width: 690px;
 }
 
 #pikachu {
     border: 3px solid brown;
     border-radius: 10%;
-    width: 51%;
-    height: 480px;
+    height: 510px;
+    width: 690px;
 }
 
 #scratch {
     border: 3px solid brown;
     border-radius: 10%;
-    width: 51%;
+    height: 450px;
+    width: 690px;
+}
+
+figcaption {
+    margin-top: 5px;
+    margin-left: 222px;
+    margin-bottom: 69px;
+    color: rgb(32, 32, 0);
+    font-size: 18px;
 }
