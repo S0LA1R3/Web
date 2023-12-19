@@ -2,14 +2,14 @@ body {
     display: flex;
     flex-direction: column; /* Alteração para column */
     margin: 0;
-    background-color: yellowgreen;
+    background-color: #830505;
 }
 
 header {
     display: flex;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
-    background-color: green;
+    background-color: #211B15;
     width: 100%;
     height: 150px;
     align-items: center;
@@ -40,6 +40,7 @@ header {
     margin-left: 30px;
     font-size: 24px;
     position: relative;
+    color: rgb(209, 194, 194);
 }
 
 .link-button:hover {
@@ -79,12 +80,12 @@ header {
     font-weight: bolder;
     color: rgb(226, 226, 0);
     font-size: 48px;
-    text-shadow: 4px 4px 8px rgba(83, 83, 47, 0.8);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
     margin-bottom: 81px;
 }
 
 .title {
-    color: rgb(32, 32, 0);
+    color: rgb(209, 194, 194);
     text-align: center;
     font-size: 32px;
     font-weight: bold;
@@ -95,7 +96,7 @@ header {
 }
 
 #subtitle {
-    color: rgb(0, 0, 0);
+    color: rgb(206, 189, 189);
     text-align: center;
     font-size: 24px;
     opacity: 0.6;
@@ -118,7 +119,7 @@ main > div > section {
     color: yellow;
     text-align: justify;
     background-color: purple;
-    border: 2px solid brown;
+    border: 2px solid #211B15;
     border-radius: 5%;
     
 }
@@ -144,21 +145,21 @@ main img {
 }
 
 #jojo {
-    border: 3px solid brown;
+    border: 3px solid #211B15;
     border-radius: 5%;
     height: 400px;
     width: 690px;
 }
 
 #pikachu {
-    border: 3px solid brown;
+    border: 3px solid #211B15;
     border-radius: 10%;
     height: 510px;
     width: 690px;
 }
 
 #scratch {
-    border: 3px solid brown;
+    border: 3px solid #211B15;
     border-radius: 10%;
     height: 450px;
     width: 690px;
@@ -167,6 +168,6 @@ main img {
 figcaption {
     margin-top: 5px;
     margin-left: 222px;
-    color: rgb(32, 32, 0);
+    color: rgb(209, 194, 194);
     font-size: 18px;
 }

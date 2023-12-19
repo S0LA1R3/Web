@@ -2,14 +2,14 @@ body {
     display: flex;
     flex-direction: column; /* Alteração para column */
     margin: 0;
-    background-color: yellowgreen;
+    background-color: #830505;
 }
 
 header {
     display: flex;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
-    background-color: green;
+    background-color: #211B15;
     width: 100%;
     height: 150px;
     align-items: center;
@@ -41,6 +41,7 @@ header {
     margin-left: 30px;
     font-size: 24px;
     position: relative;
+    color: rgb(209, 194, 194);
 }
 
 .link-button:hover {
@@ -51,7 +52,7 @@ header {
 @keyframes grow {
     0% {
         transform: scale(1);
-        color: black;
+        color: #830505;
     }
     100% {
         transform: scale(1.3);
@@ -86,7 +87,7 @@ main {
     font-weight: bolder;
     color: rgb(226, 226, 0);
     font-size: 48px;
-    text-shadow: 4px 4px 8px rgba(83, 83, 47, 0.8);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
     margin-bottom: 51px;
 }
 
@@ -104,7 +105,7 @@ footer {
     display: flex;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
-    background-color: green;
+    background-color: #211B15;
     width: 100%;
     height: 150px;
     align-items: center;
@@ -115,6 +116,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: rgb(209, 194, 194);
 }
 
 #lists {
@@ -123,7 +125,7 @@ footer {
 }
 
 #ifpe {
-    border: 12px solid brown;
+    border: 12px solid #211B15;
     border-radius: 10%;
     margin-left: 60px;
     margin-bottom: 24px;
