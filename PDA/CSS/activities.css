@@ -115,7 +115,7 @@ main div {
 }
 
 main > div > section {
-    font-size: 30px;
+    font-size: 27px;
     color: yellow;
     text-align: justify;
     background-color: purple;
@@ -170,4 +170,220 @@ figcaption {
     margin-left: 222px;
     color: rgb(209, 194, 194);
     font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+    main > div > section {
+        font-size: 21px;
+    }
+
+    #sincrono > section {
+        height: 333px;
+    }
+    
+    #arremate > section {
+        height: 333px;
+    }
+    
+    #final > section {
+        height: 390px;
+    }
+
+    #jojo {
+        height: 300px;
+        width: 600px;
+    }
+    
+    #pikachu {
+        height: 390px;
+        width: 600px;
+    }
+    
+    #scratch {
+        height: 360px;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        margin-right: 10px;
+        margin-left: 25px;
+    }
+
+    main > div > section {
+        font-size: 18px;
+    }
+
+    #sincrono > section {
+        height: 222px;
+    }
+    
+    #arremate > section {
+        height: 222px;
+    }
+    
+    #final > section {
+        height: 273px;
+    }
+
+    #jojo {
+        height: 255px;
+        width: 450px;
+    }
+    
+    #pikachu {
+        height: 300px;
+        width: 450px;
+    }
+    
+    #scratch {
+        height: 300px;
+        width: 450px;
+    }
+
+    figure {
+        margin-left: 10px;
+    }
+
+    figcaption {
+        margin-left: 111px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    main div {
+        flex-direction: column;
+    }
+
+    main > div > section {
+        margin-left: 21px;
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+
+    #subtitle {
+        margin-bottom: 0;
+    }
+
+    #sincrono > section {
+        height: 180px;
+        width: 333px;
+    }
+    
+    #arremate > section {
+        height: 160px;
+        width: 333px;
+    }
+    
+    #final > section {
+        height: 190px;
+        width: 333px;
+        margin-bottom: 24px;
+    }
+
+    #jojo {
+        height: 200px;
+        width: 390px;
+    }
+    
+    #pikachu {
+        height: 300px;
+        width: 390px;
+    }
+    
+    #scratch {
+        height: 300px;
+        width: 390px;
+    }
+
+    figure img {
+        margin-left: 36px;
+    }
+    
+    figcaption {
+        margin-left: 105px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 100px;
+    }
+
+    #logo {
+        width: 50px;
+    }
+
+    #name {
+        font-size: 24px;
+    }
+
+    #content {
+        font-size: 15px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    .link-button {
+        font-size: 15px;
+    }
+
+    #intro {
+        font-size: 36px;
+        margin-bottom: 51px;
+    }
+
+    .title {
+        font-size: 27px;
+    }
+
+    main > div > section {
+        margin-left: 0;
+    }
+
+    #sincrono > section {
+        font-size: 14px;
+        height: 165px;
+        width: 222px;
+    }
+    
+    #arremate > section {
+        font-size: 14px;
+        height: 140px;
+        width: 222px;
+    }
+    
+    #final > section {
+        font-size: 14px;
+        width: 222px;
+        margin-bottom: 24px;
+    }
+
+    #jojo {
+        height: 150px;
+        width: 245px;
+    }
+    
+    #pikachu {
+        height: 240px;
+        width: 245px;
+    }
+    
+    #scratch {
+        height: 210px;
+        width: 245px;
+    }
+
+    figcaption {
+        font-size: 14px;
+        margin-left: 60px;
+    }
 }
