@@ -1,3 +1,17 @@
+import '../../../node_modules/font-awesome/fonts/fontawesome-webfont.eot'
+import '../../../node_modules/font-awesome/fonts/fontawesome-webfont.svg'
+import '../../../node_modules/font-awesome/fonts/fontawesome-webfont.ttf'
+import '../../../node_modules/font-awesome/fonts/fontawesome-webfont.woff'
+import '../../../node_modules/font-awesome/fonts/fontawesome-webfont.woff2'
+import '../../../node_modules/font-awesome/fonts/FontAwesome.otf'
+import '../../../node_modules/font-awesome/css/font-awesome.css'
+import '../sass/index.scss'
+import '../imgs/logo.png'
+import '../../paginas/cursos.html'
+import '../../paginas/inicio.html'
+import '../../paginas/sobre.html'
+import '../../paginas/suporte.html'
+
 (function () {
     function marcarLinkComoSelecionado(hash) {
         const links = document.querySelectorAll(`[wm-link]`)
@@ -10,6 +24,7 @@
     function navegarViaAjax(hash) {
         if (!hash) return
 
+        const link = document.querySelector(`[wm-link='${hash}']`)
         const destino = document.querySelector('[wm-link-destino]')
 
         const url = hash.substring(1)
