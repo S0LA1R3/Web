@@ -35,8 +35,8 @@ function appIMG() {
 
 gulp.task('appHTML', appHTML);
 gulp.task('appCSS', appCSS);
-gulp.task('appJS', apJSL);
-gulp.task('appIMG', IMGTML);
+gulp.task('appJS', appJS);
+gulp.task('appIMG', appIMG);
 
 module.exports = {
     appHTML,
